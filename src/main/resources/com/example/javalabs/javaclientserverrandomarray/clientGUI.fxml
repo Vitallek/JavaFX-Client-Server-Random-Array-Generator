@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainPane" maxHeight="500" maxWidth="300" minHeight="500.0" minWidth="300" prefHeight="500.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javalabs.javaclientserverrandomarray.ClientController">
+   <children>
+
+      <Label fx:id="welcomeLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="15.0" layoutY="14.0" prefHeight="100.0" prefWidth="270.0" text="Random number array generator &#10;V1.0" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+
+      <Label fx:id="enterAmountLabel" alignment="CENTER" layoutX="26.0" layoutY="126.0" prefHeight="50.0" prefWidth="135.0" text="Enter amount &#10;of numbers" textAlignment="CENTER">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+
+      <Label fx:id="enterMaxValueLabel" alignment="CENTER" layoutX="149.0" layoutY="126.0" prefHeight="50.0" prefWidth="135.0" text="Enter maximum&#10;possible value" textAlignment="CENTER">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+
+      <TextField fx:id="numbersAmount" alignment="CENTER" layoutX="41.0" layoutY="199.0" prefHeight="50.0" prefWidth="105.0" text="20">
+         <font>
+            <Font size="25.0" />
+         </font></TextField>
+
+      <TextField fx:id="maxNumberValue" alignment="CENTER" layoutX="164.0" layoutY="199.0" prefHeight="50.0" prefWidth="105.0" text="20">
+         <font>
+            <Font size="25.0" />
+         </font></TextField>
+
+      <Button fx:id="goButton" layoutX="104.0" layoutY="272.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="90.0" text="Go">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+
+      <ScrollPane fx:id="resultPanel" layoutX="25.0" layoutY="333.0" prefHeight="150.0" prefWidth="250.0">
+        <content>
+          <VBox fx:id="answerZone" minHeight="0.0" minWidth="0.0" prefWidth="235.0" />
+        </content>
+      </ScrollPane>
+
+   </children>
+</AnchorPane>
