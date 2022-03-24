@@ -17,7 +17,9 @@ public class ConfigArray implements Serializable {
     public int[] getArrayWithConfig() {
         return arrayWithConfig;
     }
-
+    public void writeConfigArray(){
+        System.out.println("amount of numbers: " + arrayWithConfig[0] + "\n max value: " + arrayWithConfig[1]);
+    }
     public void fillConfigArray(int numAmount, int maxNum){
         this.arrayWithConfig[0] = numAmount;
         this.arrayWithConfig[1] = maxNum;

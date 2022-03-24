@@ -33,6 +33,7 @@ public class Client{
         try{
             if(configArray != null){
                 outp.writeObject(configArray);
+                this.configArray = new ConfigArray();
             }
         } catch (IOException e){
             e.printStackTrace();

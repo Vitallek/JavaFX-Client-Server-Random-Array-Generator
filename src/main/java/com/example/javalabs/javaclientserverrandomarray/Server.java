@@ -22,7 +22,7 @@ public class Server {
             while (true) {
                 server.receiveFromClient();
                 System.out.println("received from " + server.socket.getRemoteSocketAddress().toString());
-                System.out.println(server.configArray);
+                server.configArray.writeConfigArray();
                 System.out.println("performing task...");
                 server.replyToClient();
                 System.out.println(server.randomArray.randomArrayToString());
